@@ -1,0 +1,94 @@
+# =========================
+# OS / IDE
+# =========================
+
+.DS_Store
+Thumbs.db
+
+.idea/
+.vscode/
+
+*.swp
+*.swo
+
+
+# =========================
+# Python
+# =========================
+
+python/__pycache__/
+python/**/*.py[cod]
+python/.pytest_cache/
+python/.mypy_cache/
+python/.ruff_cache/
+python/.venv/
+python/venv/
+
+
+# =========================
+# Go
+# =========================
+
+go/dist/
+go/bin/
+
+go/codex-sync
+go/codex-sync.exe
+
+*.test
+*.out
+coverage.out
+
+
+# =========================
+# Build artifacts
+# =========================
+
+dist/
+build/
+
+*.exe
+*.dll
+*.so
+*.dylib
+
+
+# =========================
+# Logs / temporary
+# =========================
+
+*.log
+*.tmp
+*.temp
+
+tmp/
+.cache/
+
+
+# =========================
+# Environment / secrets
+# =========================
+
+.env
+.env.*
+!.env.example
+
+
+# =========================
+# Codex local state
+# =========================
+
+# Не коммитим локальное состояние самого Codex
+.codex/
+**/.codex/
+
+# Но .codex-sync внутри пользовательских проектов
+# должен коммититься, поэтому его здесь НЕ игнорируем.
+
+
+# =========================
+# Misc
+# =========================
+
+*.bak
+*.backup
